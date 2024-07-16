@@ -1,0 +1,191 @@
+/* Global Styles */
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  background-color: #0080FF;
+  margin: 0;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+/* Sticky Header */
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+/* Table Styles */
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+/* Responsive Table Styles */
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+/* Header and Footer Styles */
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ccc;
+  color: black;
+  text-align: center;
+  padding: 10px 0; /* Add padding for spacing */
+}
+
+/* Form Elements */
+.input-style {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 5% auto; /* Centered margin */
+  box-sizing: border-box;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+}
+
+input[type=text]:focus,
+textarea:focus,
+button:focus {
+  outline: 4px solid orange;
+  background-color: rgb(224, 255, 219); /* Focus background color */
+}
+
+/* Buttons */
+.button {
+  background-color: aqua;
+  border: none;
+  color: black;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; /* Consistent font size */
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 25px;
+  width: 90%;
+}
+
+.button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+/* Horizontal Rule */
+hr {
+  width: 90%;
+}
+
+/* Headings */
+h3 {
+  text-align: center;
+  color: white;
+}
+
+.alert {
+  color: yellow;
+}
+
+/* Profile Style */
+.profile-style {
+  border-style: dotted;
+}
+
+/* Layout Divs */
+.left-div,
+.right-div {
+  width: 45%; /* Adjust width for better alignment */
+  display: inline-block;
+  vertical-align: top; /* Align vertically */
+}
+
+.left-div {
+  margin-right: 5%;
+}
+
+.right-div {
+  float: right;
+}
